@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
-            <h2 className="font-serif text-3xl font-bold gold-text-gradient uppercase tracking-widest mb-6">LUSTROUS</h2>
+            <h2 className="font-serif text-2xl sm:text-4xl font-bold gold-text-gradient uppercase tracking-widest mb-6">LUSTROUS</h2>
             <p className="text-gray-400 font-light max-w-md leading-relaxed mb-8">
               A premium beauty sanctuary where we specialize in lashes and nails. Passionate about enhancing your natural beauty with precision and luxury.
             </p>
@@ -48,11 +48,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-10 border-t border-brand-gold/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-xs uppercase tracking-widest font-light">
+        <div className="pt-10 border-t border-brand-gold/5 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+          <p className="text-gray-500 text-[10px] sm:text-xs uppercase tracking-widest font-light">
             © {new Date().getFullYear()} LUSTROUS BY HERJORKEH. ALL RIGHTS RESERVED.
           </p>
-          <p className="text-gray-500 text-xs uppercase tracking-widest font-light">
+          <p className="text-gray-500 text-[10px] sm:text-xs uppercase tracking-widest font-light">
             DESIGNED WITH ELEGANCE.
           </p>
         </div>
