@@ -14,9 +14,9 @@ export default function About() {
           >
             <div className="aspect-[4/5] overflow-hidden rounded-sm">
               <img
-                src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?auto=format&fit=crop&q=80&w=800"
-                alt="Our Beauty Experts"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
+                src="https://drive.google.com/uc?export=view&id=150ePbPcCQPdZi9Jh80mydCg4af2Cq5m7"
+                alt="CEO of Lustrous by Herjorkeh"
+                className="w-full h-full object-cover transition-all duration-700 hover:scale-105"
                 referrerPolicy="no-referrer"
               />
             </div>
