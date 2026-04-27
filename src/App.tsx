@@ -10,6 +10,7 @@ import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
 import Training from './components/Training';
+import FAQ from './components/FAQ';
 import Booking from './components/Booking';
 import Footer from './components/Footer';
 
@@ -24,6 +25,7 @@ export default function App() {
         <Gallery />
         <Testimonials />
         <Training />
+        <FAQ />
         <Booking />
       </main>
       <Footer />

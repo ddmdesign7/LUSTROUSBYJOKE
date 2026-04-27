@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-screen flex flex-col items-center justify-center pt-32 pb-20 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -20,29 +20,35 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="block text-brand-gold tracking-[0.3em] uppercase text-sm sm:text-base mb-4 font-medium">
+          <span className="block text-brand-gold tracking-[0.3em] uppercase text-xs sm:text-sm mb-4 font-medium">
             Redefining Elegance
           </span>
-          <h1 className="text-4xl sm:text-7xl md:text-8xl font-serif font-bold text-white mb-6 leading-tight uppercase tracking-widest sm:tracking-tight">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight uppercase tracking-widest sm:tracking-tight">
             LUSTROUS <br /> 
             <span className="gold-text-gradient italic font-normal">Studio</span> <br />
-            <span className="text-xl sm:text-3xl tracking-[0.2em] font-light opacity-80">by Herjorkeh</span>
+            <span className="text-lg sm:text-2xl tracking-[0.2em] font-light opacity-80 lowercase block mt-2">by Herjorkeh</span>
           </h1>
-          <p className="text-gray-300 text-lg sm:text-xl mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-gray-300 text-base sm:text-lg mb-10 max-w-xl mx-auto font-light leading-relaxed">
             Bespoke beauty services tailored to your unique features. <br className="hidden sm:block" />
             Experience the gold standard in premium lash and nail couture.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
               href="#booking"
-              className="w-full sm:w-auto px-10 py-5 bg-brand-gold hover:bg-white text-brand-black font-bold uppercase tracking-widest transition-all duration-300 transform hover:scale-105 shadow-xl"
+              className="w-full sm:w-auto px-8 py-4 bg-brand-gold hover:bg-white text-brand-black font-bold text-xs uppercase tracking-widest transition-all duration-300 transform hover:scale-105 shadow-xl"
             >
               BOOK APPOINTMENT
             </a>
             <a
+              href="tel:08162837752"
+              className="w-full sm:w-auto px-8 py-4 border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-brand-black font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-xl"
+            >
+              Call Us
+            </a>
+            <a
               href="#services"
-              className="w-full sm:w-auto px-10 py-5 border border-white text-white hover:bg-white hover:text-brand-black font-bold uppercase tracking-widest transition-all duration-300"
+              className="w-full sm:w-auto px-8 py-4 border border-white text-white hover:bg-white hover:text-brand-black font-bold text-xs uppercase tracking-widest transition-all duration-300"
             >
               Explore Services
             </a>
