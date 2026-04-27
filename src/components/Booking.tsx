@@ -86,7 +86,7 @@ export default function Booking() {
 
             <div className="space-y-8">
               {[
-                { icon: Phone, title: 'Call Us', content: '08162837752' },
+                { icon: Phone, title: 'Call Us', content: '08162837752', href: 'tel:08162837752' },
                 { icon: MapPin, title: 'Studio Address', content: 'Powerline, Light and Life Junction, Ijoka Road, Akure, Ondo State' },
                 { icon: Clock, title: 'Open Hours', content: 'Mon - Sat: 9:00 AM - 7:00 PM' }
               ].map((item) => (
@@ -96,7 +96,11 @@ export default function Booking() {
                   </div>
                   <div>
                     <h4 className="text-sm uppercase tracking-widest text-brand-gold mb-1">{item.title}</h4>
-                    <p className="text-gray-200">{item.content}</p>
+                    {item.href ? (
+                      <a href={item.href} className="text-gray-200 hover:text-brand-gold transition-colors">{item.content}</a>
+                    ) : (
+                      <p className="text-gray-200">{item.content}</p>
+                    )}
                   </div>
                 </div>
               ))}
